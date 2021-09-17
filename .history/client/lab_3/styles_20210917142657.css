@@ -4,14 +4,6 @@
     box-sizing: border-box;
   }
 
-  .wrapper {
-    display:flex;
-    flex-direction: column;
-    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
-    margin:10px;
-  }
-  
-
   .title{
     display: inline-block;
     background-color: rgba(0,139, 139,0.8);
@@ -119,5 +111,6 @@
   }
   
   .signup {
-    margin-left: 600px;
+       color: #fff;
+    margin-left: auto;
   }
