@@ -154,12 +154,12 @@
   }
   
   .carousel__actions button {
-    border-radius: 5px;
+    border-radius: 10px;
     border: 0;
     font-weight: bold;
     cursor: pointer;
-    width: 55px;
-    height: 25px;
+    width: 40px;
+    height: 40px;
   }
   
   .carousel .carousel__actions button#carousel__button--prev {
@@ -179,6 +179,3 @@
       transform: opacity linear;
     }
   }
-button:hover{
-    background-color: orange;
-}
