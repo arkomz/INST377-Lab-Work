@@ -26,7 +26,6 @@ async function windowActions() {
         accessToken: 'your.mapbox.access.token'
         }).addTo(mymap);
     }
-    mapInit()
     
     function displayMatches(event) {
       const matchArray = findMatches(event.target.value, restaurants);
