@@ -1,5 +1,5 @@
 function mapInit() {
-  var mymap = L.map('mapid').setView([38.989, -76.93], 13);
+  var mymap = L.map('mapid').setView([38.909, -76.93], 13);
   L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
   attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
@@ -32,14 +32,14 @@ async function windowActions() {
     
     function displayMatches(event) {
       const matchArray = findMatches(event.target.value, restaurants);
-      sliceArray = matchArray.slice(0,5)
-      sliceArray.forEach(element => {
+      matchArray.slice(0,5)
+      matchArray.forEach(element => {
         let coordinates = element.geocoded_column_1.coordinates.reverse()
         console.log(coordinates)
         L.marker(coordinates).addTo(mymap);
 
      })
-      const html = sliceArray.map(place => {
+      const html = matchArray.map(place => {
         return `
           <li class = 'box'>
             <span class="name">${place.name}</span>
